@@ -1,4 +1,5 @@
 "use client";
+import HeaderBar from "@/components/HeaderBar/HeaderBar";
 import MiniMap from "@/components/MiniMap/MiniMap";
 import ScriptEditor from "@/components/ScriptEditor/ScriptEditor";
 import Terminal from "@/components/Terminal/Terminal";
@@ -103,6 +104,8 @@ const TerminalPage = () => {
           gap: 2,
         }}
       >
+        <HeaderBar balance={1000} level={1} energy={100} iq={50} />
+        
         <Box sx={{ display: "flex", gap: 2, width: "100%" }}>
           <MiniMap
             viewSizeX={10}

@@ -34,7 +34,15 @@ const ScriptEditor: FC = () => {
   };
 
   return (
-    <Paper sx={{ p: 3, backgroundColor: "#1e1e1e", color: "#fff", width: "100%" }}>
+    <Paper
+      sx={{
+        p: 3,
+        backgroundColor: "#1e1e1e",
+        color: "#fff",
+        width: "100%",
+        minHeight: "500px",
+      }}
+    >
       <Typography variant="h6" gutterBottom>
         ✍️ Script Editor
       </Typography>

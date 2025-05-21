@@ -82,7 +82,7 @@ const Terminal: FC<TerminalProps> = ({
 
   return (
     <Paper
-        onClick={() => document.querySelector("input")?.focus()}
+      onClick={() => document.querySelector("input")?.focus()}
       sx={{
         bgcolor: "#121212",
         color: "#00ff00",
@@ -95,6 +95,7 @@ const Terminal: FC<TerminalProps> = ({
         fontFamily: "monospace",
         borderRadius: 2,
         minWidth: 800,
+        maxHeight: 300,
       }}
       elevation={4}
     >
@@ -105,7 +106,6 @@ const Terminal: FC<TerminalProps> = ({
           </Typography>
         ))}
       </Box>
-
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <Typography sx={{ mr: 1 }}>{isScriptMode ? ">" : prompt}</Typography>
         <InputBase
