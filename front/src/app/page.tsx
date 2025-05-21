@@ -3,7 +3,7 @@ import MiniMap from "@/components/MiniMap/MiniMap";
 import ScriptEditor from "@/components/ScriptEditor/ScriptEditor";
 import Terminal from "@/components/Terminal/Terminal";
 import { FULL_MAP_MOCK } from "@/mock/map";
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import { useState } from "react";
 
 const TerminalPage = () => {
